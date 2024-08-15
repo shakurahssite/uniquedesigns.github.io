@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unique Designs Home</title>
+<meta charset="UTF-8">
+<meta name="description" content="Make your Statement without saying a word, Get Fashionable clothes at your fingertips">
+<meta name="keywords" content="clothes,Fashion,Pants,Skirt,Dress,Tops,">
+<meta name="author" content="Shakurah Roachford">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+body {
+  background-color: lightgray; 
+}
+
+</style>
+</head>
+
+<body>
+  <!--The Logo Imaage-->
+
+<div class="w3-container">
+
+
+<!--The Nav Bar-->
+
+<div class="w3-bar w3-black">
+
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="latest.html" class="w3-bar-item w3-button">Latest Designs</a>
+  <a href="sale.html" class="w3-bar-item w3-button">Sale</a>
+  <a href="alldesigns.html" class="w3-bar-item w3-button">All Designs</a>
+  <a href="appointment.html" class="w3-bar-item w3-button">Meet Our Designer</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact Us</a>
+  <input type="text" class="w3-bar-item w3-input w3-right w3-white w3-mobile" placeholder="Search..">
+    <button class="w3-bar-item w3-button w3-gray w3-right w3-mobile">Go</button>
+
+    <div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="myimages\Homepage Banner.png" style="width:100%">
+  <img class="mySlides" src="myimages\banner2.png" style="width:100%">
+  <img class="mySlides" src="myimages\banner3.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+  </div>
+</div>
+
+<br>
+<br>
+<h1 class="w3-text-black" style="text-shadow:1px 1px 0 #444; text-align: center; font-size: 40px;">
+<b>Welcome To Our Home Page!</b>
+
+<h3 style="text-align: center;"><u><b> Get A Sneak Peak Of Some Of Our Latest Designs Below!</u></b>
+<h4 style="text-align: center">Click on the Images below to get a better view of each design.</h4>
+<!--Images-->
+
+<br>
+
+<div class="w3-content" style="width:800px">
+  <img class="mySlides2" src="myimages\1 (2).jpg" style="width:100%;display:none">
+  <img class="mySlides2" src="myimages\44.jpg" style="width:100%">
+  <img class="mySlides2" src="myimages\4 (2).jpg" style="width:100%;display:none">
+  <img class="mySlides2" src="myimages\30.jpg" style="width:100%;display:none">
+  <img class="mySlides2" src="myimages\11 (2).jpg" style="width:100%;display:none">
+   <img class="mySlides2" src="myimages\31.jpg" style="width:100%;display:none">
+
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="myimages\1 (2).jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="myimages\44.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="myimages\4 (2).jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="myimages\30.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="myimages\11 (2).jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="myimages\31.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)">
+    </div>
+  </div>
+</div>
+
+<script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+
+<!--About Text-->
+<br>
+<h1 class="w3-text-black" style="text-shadow:1px 1px 0 #444; text-align: center; font-size: 40px;">
+<b><u>Unique Designs!</u></b></h1>
+<br>
+
+<div class="w3-container">
+  <div class="w3-cursive w3-center">
+  <p style="font-size:25px;">At Unique Designs we aim to make you reach your pinnacle of Beauty. We promote Individuality; Your own unique sense of style, taste and colour, that dress or suite that makes you Sparkle and feel One Hundred Percent Confident. 
+<br>
+<br>
+With Passion, a great love for Fashion and Individuality being the corner stone for everything we do here at Unique Designs, you can rest assured that you will <strong> Make “your” statement with out saying a word.</strong>
+<br>
+<br>
+We have a Plethora of Beautifully assorted styles for you to choose from and if by chance you don’t find exactly what you are looking for, That’s No problem, We have  skilled designers and dressmakers right at your fingertips to design, create and bring to reality that dress, skirt, suit, etc. that your heart desires.
+<br>
+<br>
+Our Ultimate Goal is to make you feel One Hundred Percent Beautiful in your own way, style and taste.
+<br>
+<br>
+
+Unique Designs Fashion Team.</p>
+</div>
+<br>
+<!--The Footer-->
+<div class="w3-container w3-gray">
+<br>
+<div class="w3-bar w3-gray">
+  <h4><b><i><u>Check Out Our Other Pages Below.</h4></u></i></b>
+  <div class="w3-bar-item"> <a href="contact.html" p><button class="w3-button w3-black w3-medium">Contact Us</button></p></a></div>
+  <div class="w3-bar-item"><a href="alldesigns.html" p><button class="w3-button w3-black w3-medium">All Designs</button></p></a></div>
+  <div class="w3-bar-item"><a href="sale.html" p><button class="w3-button w3-black w3-medium">Sale</button></p></a></div>
+  <div class="w3-bar-item"><a href="latest.html" p><button class="w3-button w3-black w3-medium">Latest Designs</button></p></a></div>
+  <div class="w3-bar-item"><a href="appointment.html" p><button class="w3-button w3-black w3-medium">Meet Our Designer</button></p></a></div>
+</div>
+<div class="w3-container w3-gray">
+<div class="w3-bar w3-gray">
+  <h4><b><i><u>Stay Connected With Us!</h4></u></i></b>
+  <div class="w3-bar-item"><p><a href="https://wa.me/+18683149099">
+<img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="Whatsapp Me" width="150" height="none"></a></p></div>
+  <div class="w3-bar-item"><p><a href="https://telegram.me/@shakurah1">
+<img src="myimages\telegram_logo_circle_icon_134012.png" alt="telegram Me" width="50" height="none"></a></p></div>
+  <div class="w3-bar-item"><p><a href="https://facebook.com">
+<img src="myimages\facebook-logo-facebook-icon-transparent-free-png.webp" alt="Facebook" width="50" height="none"></a></p></div>
+  <div class="w3-bar-item"><p><a href="https://instagram.com">
+<img src="myimages\pngtree-instagram-icon-instagram-logo-png-image_3584852.png" alt="Facebook" width="50" height="none"></a></p></div>
+</div>
+<br>
+<h4><p align="center">&copy; 2024 Unique Designs.</p></h4>
+
+
+</body>
+</html>
